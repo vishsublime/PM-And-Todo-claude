@@ -1,0 +1,137 @@
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.stat-card {
+  background: #fff;
+  border: 1px solid var(--color-gray-200);
+  border-radius: 8px;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.stat-card--success {
+  border-color: #86efac;
+  background: var(--color-success-light);
+}
+
+.stat-card-icon {
+  font-size: 22px;
+}
+
+.stat-card-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-gray-500);
+  margin-bottom: 3px;
+}
+
+.stat-card-value {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-gray-900);
+}
+
+.dashboard-welcome {
+  background: #fff;
+  border: 1px solid var(--color-gray-200);
+  border-radius: 10px;
+  padding: 28px;
+}
+
+.dashboard-welcome-inner h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-gray-900);
+  margin-bottom: 8px;
+}
+
+.dashboard-welcome-inner > p {
+  font-size: 14px;
+  color: var(--color-gray-600);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.dashboard-modules {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 14px;
+}
+
+.module-card {
+  border: 1px solid var(--color-gray-200);
+  border-radius: 8px;
+  padding: 16px;
+  position: relative;
+  background: var(--color-gray-50);
+}
+
+.module-card h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-gray-900);
+  margin-bottom: 6px;
+}
+
+.module-card p {
+  font-size: 12px;
+  color: var(--color-gray-500);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.module-card--disabled {
+  opacity: 0.6;
+}
+
+.module-card-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 10px;
+  font-weight: 600;
+  background: var(--color-warning-light);
+  color: #92400e;
+  padding: 2px 7px;
+  border-radius: 999px;
+}
+
+.module-card-link {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.module-card-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .dashboard-welcome {
+    padding: 20px;
+  }
+
+  .dashboard-welcome-inner h2 {
+    font-size: 16px;
+  }
+
+  .dashboard-welcome-inner > p {
+    font-size: 13px;
+  }
+
+  .module-card h3 {
+    font-size: 13px;
+  }
+
+  .module-card p {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,89 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #1e1b4b 100%);
+  padding: 20px;
+}
+
+.auth-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+  padding: 36px 40px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.auth-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.auth-logo-icon {
+  font-size: 28px;
+  color: #4f46e5;
+}
+
+.auth-logo-name {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--color-gray-900);
+  letter-spacing: 0.08em;
+}
+
+.auth-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-gray-900);
+  margin-bottom: 6px;
+}
+
+.auth-subtitle {
+  font-size: 13px;
+  color: var(--color-gray-500);
+  margin-bottom: 24px;
+}
+
+.auth-tenant-info {
+  background: var(--color-primary-light);
+  border: 1px solid #c7d2fe;
+  border-radius: 6px;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+}
+
+.auth-tenant-info p {
+  font-size: 13px;
+  color: var(--color-primary-dark);
+  margin: 0;
+}
+
+.auth-tenant-info p + p {
+  margin-top: 2px;
+}
+
+.auth-tenant-label {
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .auth-page {
+    padding: 16px;
+  }
+
+  .auth-card {
+    padding: 28px 22px;
+  }
+
+  .auth-logo-name {
+    font-size: 20px;
+  }
+
+  .auth-title {
+    font-size: 18px;
+  }
+}
